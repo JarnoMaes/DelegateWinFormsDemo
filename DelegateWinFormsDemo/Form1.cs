@@ -41,7 +41,7 @@ namespace DelegateWinFormsDemo
             foreach (Person person in People.GetPeople())
             {  
                 AssignToDelegate();
-                lstPerson.Items.Add(person.ToString());
+                lstPerson.Items.Add(person.ToString(proc));
             }
         }
     }
