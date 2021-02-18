@@ -18,12 +18,12 @@ namespace DelegateWinFormsDemo.Models
 
         public static string FirstNameToLower(Person input)
         {
-            return input.FirstName.ToLower();
+            return input.FirstName.ToLower() +  " Hello and Welcome";
         }
 
         public static string FullNameToUpper(Person input)
         {
-            return input.FirstName.ToUpper() + input.LastName.ToUpper();
+            return $"{input.FirstName} {input.LastName} Age is {input.Age}";
         }
     }
 }
